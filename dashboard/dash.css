@@ -1,0 +1,168 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1B1B1B;
+}
+
+
+.painel-black {
+  width: 100%;
+  height: 115px;
+  background-color: black;
+
+}
+
+.painel-orange {
+  width: 100%;
+  height: 50px;
+  background-color: #C5A723;
+}
+
+.painel-user {
+  padding: 3vh;
+  float: right;
+}
+
+
+
+.painel-user p {
+  float: right;
+  color: #fff;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.adm {
+  color: #fff;
+  position: relative;
+  left: 300px;
+  float: left;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+.user-img {
+  width: 50px;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
+
+.sidebar {
+  border: 1px solid #fff;
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #C5A723;
+  overflow-x: hidden;
+  transition: 0.5s;
+
+
+}
+
+.sidebar a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  margin-top: 15px;
+}
+
+.sidebar a:hover {
+  background-color: #575757;
+}
+
+.logo {
+  text-align: center;
+  padding: 10px;
+  background-color: black;
+
+}
+
+.logo img {
+  width: 90px;
+  height: auto;
+}
+
+.container {
+  width: 380px;
+  height: 300px;
+  background-color: #fff;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.consulta-h3 {
+  font-size: 28px;
+}
+
+.logs-h3 {
+  font-size: 28px;
+}
+
+.fundo-cinza {
+  margin: 0 auto;
+  background-color: #8585857e;
+  height: 150px;
+  width: 40%;
+}
+
+.fundo-cinza img {
+  margin: 25px;
+  width: 100px;
+}
+
+.btn-acessar {
+  margin-top: 3vh;
+  height: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: black;
+  color: #fff;
+  width: 150px;
+  border-radius: 5%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .painel-orange {
+    display: none;
+  }
+
+  .painel-black {
+    display: none;
+  }
+
+  .sidebar {
+    width: 0;
+    padding-top: 0;
+  }
+
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width:884px) {
+
+  .container {
+
+    margin-right: 6vh;
+  }
+
+}

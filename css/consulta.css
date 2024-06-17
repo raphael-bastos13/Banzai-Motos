@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #1b1b1b;
+}
+
+header {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logoimg {
+  width: 100px;
+  display: flex;
+  margin: 0 auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.download-btn {
+  border: none;
+  background-color: red;
+  color: white;
+  padding: 5px;
+  border-radius: 5%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.search-field {
+  flex: 1 1 22%;
+  margin: 10px 0;
+}
+
+.search-field label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.search-field input,
+.search-field select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.search-buttons {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+#add-user {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+#add-user:hover {
+  background-color: #218838;
+}
+
+#search {
+  border-radius: 15%;
+  padding: 5px;
+  margin: 15px;
+  cursor: pointer;
+  background-color: rgb(0, 0, 0);
+  font-weight: bold;
+  color: white;
+  
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.page-btn {
+  background: none;
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.page-btn:hover {
+  background-color: #ddd;
+}
+
+.pagination label {
+  display: flex;
+  align-items: center;
+}
+
+.pagination select {
+  margin-left: 5px;
+  padding: 5px;
+}
+
+.delete-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 3px;
+}
+
+.delete-btn:hover {
+  background-color: darkred;
+}
+
+
+@media only screen and (max-width: 430px) {
+
+  .teste {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .logo-header {
+    display: none;
+  }
+
+
+  }

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="dash.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="painel-black">
+    <div class="painel-user">
+      <p>Administrador</p>
+      <img class="user-img" src="imagens/user.png">
+    </div>
+  </div>
+
+  <div class="painel-orange">
+    <div class="adm">
+      <p>Admin - Dashboard</p>
+    </div>
+  </div>
+
+  <div class="menu-icon" onclick="toggleMenu()">
+    &#9776;
+  </div>
+
+
+  <div class="sidebar" id="sidebar">
+    <div class="logo">
+      <img class="logo-img" src="imagens/logobanzai.png" alt="Banzai Motos">
+    </div>
+
+    <a href="../index.php">Início</a>
+    <a href="../equipamentos.php">Equipamentos</a>
+    <a href="../index.php">Motos</a>
+    <a href="../concessionaria/concessionaria.php">Ambiente</a>
+  </div>
+
+  <div class="container">
+    <h3 class="consulta-h3">Consulta de usuários</h3>
+    <div class="fundo-cinza">
+      <img src="imagens/44948.png">
+    </div>
+    <a href="../consulta.php"> <button class="btn-acessar">Acessar</button></a>
+  </div>
+
+  <div class="container">
+    <h3 class="logs-h3">Verificar LOGS </h3>
+    <div class="fundo-cinza">
+      <img src="imagens/logs.png">
+    </div>
+    <a href="../log.php"><button class="btn-acessar">Acessar</button></a>
+  </div>
+
+  <div class="container">
+    <h3 class="logs-h3">Modelo BD </h3>
+    <div class="fundo-cinza">
+      <img src="imagens/modelobd.png">
+    </div>
+    <a href="../usermaster/modelobd.html"><button class="btn-acessar">Acessar</button></a>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
