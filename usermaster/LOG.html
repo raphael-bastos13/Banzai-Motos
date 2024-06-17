@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="LOG.css">
+    <title>Tela de Log de Atividades do Usuário</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img class="logo-img" src="../imagens/logobanzai.png" alt="Logo">
+        </div>
+        <input type="checkbox" id="nav_check" hidden>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html" class="active">Início</a>
+                </li>
+                <li>
+                    <a href="../index.html">Motos</a>
+                </li>
+                <li>
+                    <a href="../equipamentos/equipamentos.html">Equipamentos</a>
+                </li>
+                <li>
+                    |
+                </li>
+            </ul>
+        </nav>
+        <label for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+    </header>
+    <br>
+    <h1>Log dos Usuários</h1>
+    <div class="filter-container">
+        <div class="expandable" id="expandableFilter">
+            <button id="expandButton">Filtrar/Resetar</button>
+            <select id="columnSelect">
+                <option value="0">Nome de Usuário</option>
+                <option value="1">Data e Hora</option>
+                <option value="2">ID do Usuário</option>
+                <option value="3">Ação Realizada</option>
+                <option value="4">CPF</option>
+                <option value="5">Detalhes Adicionais</option>
+            </select>
+            <input type="text" id="searchInput" placeholder="Buscar...">
+            <button id="filterButton">Filtrar</button>
+            <button id="resetButton">Resetar Filtro</button>
+        </div>
+    </div>
+    <table id="logTable">
+        <thead>
+            <tr>
+                <th>Nome de Usuário</th>
+                <th>Data e Hora</th>
+                <th>ID do Usuário</th>
+                <th>Ação Realizada</th>
+                <th>CPF</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>joao</td>
+                <td>2024-06-04 17:45:23</td>
+                <td>94345</td>
+                <td>Login</td>
+                <td>563.436.725-00</td>
+            </tr>
+            <tr>
+                <td>henrique</td>
+                <td>2024-06-04 17:45:30</td>
+                <td>95240</td>
+                <td>Acessar Página Inicial</td>
+                <td>024.539.520-00</td>
+            </tr>
+            <tr>
+                <td>renan</td>
+                <td>2024-06-04 17:45:35</td>
+                <td>28917</td>
+                <td>Motos</td>
+                <td>832.146.139-00</td>
+            </tr>
+            <tr>
+                <td>raphael</td>
+                <td>2024-06-04 17:45:40</td>
+                <td>17387</td>
+                <td>Equipamentos</td>
+                <td>224.688.487-05</td>
+            </tr>
+            <tr>
+                <td>pedro</td>
+                <td>2024-06-04 17:46:00</td>
+                <td>42058</td>
+                <td>Logout</td>
+                <td>953.652.219-07</td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="LOG.js"></script>
+</body>
+
+</html>
